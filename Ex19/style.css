@@ -1,0 +1,38 @@
+@charset "UTF-8";
+  /* 
+    em HTML tudo que for id = em CSS será '#' NESSE CASO É QUE HAJA APENAS UM POR CÓDIGO
+    em HTML tudo que for class = em CSS será '.' E NESSE CASO PODE SER MÚLTIPLO 
+  */
+  /*
+  PODE SE COLOCAR DUAS CLASS no mesmo elemento e inclusive ter uma CLASS e um ID também, o exemplo será com a class 'destaque' criada abaixo
+  */
+body {
+    background-color: #6A3D7A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    color: #00FA00;
+}
+h1#principal{
+    text-align: center;
+    background-color:#00FA00;
+    color: #FA007C;
+}
+h2 {
+    color:
+    #00FA8D;
+}
+.basico{
+    color: #00FA8D;
+}
+.intermediario{
+   color: #d4fa00;
+}
+.avancado{
+    color:#fa00c4;
+}
+.destaque{
+    background-color:#B600FA ;
+} 
+/*para usar duas class juntas no mesmo elemento é só colocar uma após a outra somente com espaço sem virgula*/ 
+/* e para fazer ID com CLASS é só fazer da queguinte forma <h1 id="principal" class="destaque">Criando site com HTML e CSS</h1>*/

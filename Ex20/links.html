@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(101, 19, 177);
+            text-decoration: none;
+            font-weight:bolder;
+        }
+        a:visited{
+            color: rgb(153, 105, 197);
+        }
+        /*essa pseudo class é para quando o link já foi clicado e daí podemos configura-lá de forma individual*/
+        a:hover{
+            color: rgb(89, 14, 158);
+            text-decoration: underline;
+        }
+        a:active{
+            color: violet;
+        }
+        a::after{
+            content:' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: grey;
+        }
+        /*essa pseudo class é utiliza para quando ficamos clicado com o mouse sobre o link e ele mudará de cor*/
+
+        /*PSEUDO CLASSES 1X ":"
+          PSEUDO ELEMENTO 2X "::" 
+          ">" = filho/ childen*/
+
+        /* target="_black" é utilizado para abrir páginas em outra guia. NÃO ESQUECER*/
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.bibliaonline.com.br/" target="_blank">Biblia</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Curso em vídeo</a></li>
+
+    </ul>
+</body>
+</html>
