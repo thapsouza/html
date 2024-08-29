@@ -1,10 +1,22 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:"Passion One", sans-serif;;
+    --fonte3: "Nerko One", cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 html, body{
     min-height: 100vh;
+    font-family: var(--fonte1);
+    font-size: 2vh
 }
 header{
     background-color: black;
@@ -12,6 +24,10 @@ header{
     text-align: center;
     padding-top: 50px;
     font-variant: small-caps;
+}
+header > h1{
+    font-family: var(--fonte2);
+    font-size: 10vh;
 }
 header > p{
     padding-bottom: 50px;
@@ -30,6 +46,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 40px;
+    font-family: var(--fonte3);
+    font-size: 4vh;
     
 }
 .normal{
@@ -42,7 +60,8 @@ section{
 }
 .imagem > p{
     background-color: rgb(29, 28, 28);
-    width: 300px;
+
+    display: inline-block;
 }
 footer{
     background-color: black;
